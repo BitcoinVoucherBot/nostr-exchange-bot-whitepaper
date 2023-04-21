@@ -12,6 +12,10 @@ We want then to provide the basis for an automated platform that relies on a dec
 
 The advent of the Nostr protocol, provides the foundation for a communication platform suitable for this new method of order management and acquisition, which is decentralised, end-to-end encrypted, does not rely on centralised servers, and allows it to be replicated for each new entity that decides to participate.
 
+Nostr protocol is censorship-resistant because it operates on a network of distributed nodes (Relays) rather than a single centralized server or entity. This means that no single party has complete control over the network, and no single point of failure exists. As a result, it is much harder for any individual or group to censor or manipulate the data on the network. This appears to be the right place where the system can work.
+
+Therefore, this can be considered censorship-resistant because it allows open and transparent communication and data transfers without fear of censorship or manipulation.
+
 ## The Nostr NIP-04
 
 We are interested in NIP-04 since the bot uses direct messages to interact with users. Reading the NIP-04 we can get that: a special event with kind 4, meaning "encrypted direct message", has the following content:
@@ -22,5 +26,22 @@ This kind is useful for our goal because permits E2E communications between user
 
 ## A Nostr DM-Bot
 
+The idea of a Bot on Nostr protocol that can receive and forward FIAT/bitcoin exchange orders is related to the decentralization of the protocol itself. Therefore, we created an interface, available via direct message Nostr, that allows exchange orders to be acquired in a confidential and decentralized manner. Big companies like google, amazon, etc cannot block the system as it happens on playstore or appstore. The system does not need permission or to be allowed by any central authority.
+
+The system can also be cloned on many different infrastructures and replicated and connected to many different providers in different jurisdictions. The number of services provided can be even higher.
+
+Nostr profile is rich and currently provides various data including:
+
+- the Nostr NIP-05 handle
+- a lightning address where to receive zap
+
+This makes it possible:
+
+- to push sats automatically to the lightning address defined in the profile
+
+
+## Open Source / many providers 
+
+the Bot system is not tied to a single provider. It can be cloned, connected to different providers (we would add many by adding libraries) and modified to match personal customization. It makes possible to become a decentralized interface to one or many providers.
 
 
